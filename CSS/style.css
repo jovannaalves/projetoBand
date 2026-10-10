@@ -84,7 +84,7 @@ nav a:hover {
 .hero {
     width: 100%;
     height: 100vh;
-    background: url(/IMG/estudio.webp); /*img fundo*/
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(/IMG/estudio.webp); /*img fundo*/
     background-position: center;
     background-size: cover;
     padding: 20px 20px 0px 20px;
