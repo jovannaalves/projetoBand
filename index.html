@@ -116,8 +116,11 @@
                         <h3>Sab o 20h30</h3>
                         <p>Humor, desafios e muitas <br> aventuras em equipe .</p>
                     </div>
-
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
         <div class="footer-superior">
             <div class="footer-ao-vivo">
@@ -126,7 +129,7 @@
                     <h2>Assista à Band ao vivo</h2>
                 </div>
                 <p>Acompanhe nossa programação em tempo real, no seu computador, celular ou smart TV.</p>
-                <button class="btn-assistir-agora">
+                <button class="btn-assistir-agora btn-play">
                     <i class="fa-solid fa-play"></i> ASSISTIR AGORA
                 </button>
             </div>
@@ -177,7 +180,20 @@
             <p>&copy; Projeto Educativo. - Professor Gabriel 2026.</p>
         </div>
     </footer>
+
+    <!-- ADICIONADO: Estrutura do Modal do Vídeo com Overlay -->
+    <div class="video-modal-overlay video-jornal">
+        <div class="video-modal-content">
+            <button class="X-fechar">&times;</button>
+            <video class="video-player" controls>
+                <source src="IMG/videoplayback.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
     <script src="https://kit.fontawesome.com/0d564c5b59.js" crossorigin="anonymous"></script>
+    <!-- ADICIONADO: Importação do arquivo JS -->
+    <script src="script.js"></script>
 </body>
 
 </html>
