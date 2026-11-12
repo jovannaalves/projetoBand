@@ -84,7 +84,7 @@ nav a:hover {
 .hero {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(/IMG/estudio.webp); /*img fundo*/
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(/IMG/estudio.webp);
     background-position: center;
     background-size: cover;
     padding: 20px 20px 0px 20px;
@@ -162,7 +162,6 @@ nav a:hover {
     padding-left: 10px;
 }
 
-
 .superior-noticias p{
     cursor: pointer;
     display: flex;
@@ -183,7 +182,6 @@ nav a:hover {
     gap: 18px;
     width: 100%;
     flex-wrap: wrap;
-    /* Permite quebrar linha em telas menores */
 }
 
 .cards img {
@@ -193,7 +191,6 @@ nav a:hover {
     object-fit: cover;
 }
 
-/* --- ESTILIZAÇÃO DA NOTÍCIA --- */
 .cards .noticia {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
@@ -319,7 +316,6 @@ footer {
     cursor: pointer;
 }
 
-/* Central Mockup de TV */
 .footer-tv {
     flex: 1;
     display: flex;
@@ -363,7 +359,6 @@ footer {
     height: auto;
 }
 
-/* Coluna lateral de Canais */
 .footer-canais {
     width: 280px;
 }
@@ -397,7 +392,7 @@ footer {
 
 .ponto {
     display: inline-block;
-    width: 10px;
+    width: 100px;
     height: 10px;
     border-radius: 50%;
     margin-right: 10px;
@@ -452,7 +447,6 @@ footer {
     color: #94a3b8;
 }
 
-/* Links do Rodapé */
 .nav-footer a {
     color: #94a3b8;
     text-decoration: none;
@@ -465,7 +459,6 @@ footer {
     color: white;
 }
 
-/* Ícones de Redes Sociais */
 .redes-sociais {
     display: flex;
     gap: 18px;
@@ -481,7 +474,6 @@ footer {
     color: white;
 }
 
-/* Copyright Linha Final */
 .footer-copyright {
     text-align: center;
     padding-top: 10px;
@@ -492,9 +484,7 @@ footer {
     color: #475569;
 }
 
-/* ADICIONADO: Estilos da Janela Modal de Vídeo com Fundo Embaçado*/
-
-/* Blur */
+/* MODAL DE VÍDEO */
 .video-modal-overlay {
     display: none; 
     position: fixed;
@@ -510,12 +500,10 @@ footer {
     align-items: center;
 }
 
-/* Exibe a modal usando Flexbox quando ativada */
 .video-modal-overlay.ativo {
     display: flex;
 }
 
-/* Caixa centralizada onde fica o vídeo */
 .video-modal-content {
     position: relative;
     width: 80%;
@@ -526,14 +514,12 @@ footer {
     overflow: hidden;
 }
 
-/* Estilo do player de vídeo */
 .video-player {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* Botão de Fechar (X) */
 .X-fechar {
     position: absolute;
     top: 10px;
@@ -552,4 +538,116 @@ footer {
 .X-fechar:hover {
     color: #ff0000;
     transform: scale(1.1);
+}
+
+/* ADICIONADO: ESTILOS DAS MODAIS DE LOGIN E CADASTRO */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay.ativo {
+    display: flex;
+}
+
+.modal-card {
+    position: relative;
+    background-color: #0b1520;
+    border: 1.5px solid #e1b12c;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    padding: 30px 25px 25px 25px;
+    box-sizing: border-box;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.btn-fechar-modal {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    background: transparent;
+    border: none;
+    color: #e1b12c;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.btn-fechar-modal:hover {
+    color: #ffffff;
+}
+
+.modal-card h2 {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 4px;
+    color: #ffffff;
+}
+
+.modal-subtitulo {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+.campo-grupo label {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.campo-grupo input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.campo-grupo input::placeholder {
+    color: #777777;
+    font-size: 13px;
+}
+
+.btn-modal-submit {
+    width: 100%;
+    background-color: #1e824c;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-modal-submit:hover {
+    background-color: #16653b;
 }

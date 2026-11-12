@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
@@ -45,9 +44,9 @@
                 do Brasil e do mundo.
             </p>
             <button class="btn-play"><i id="play" class="fa-solid fa-play"></i>ASSISTIR AGORA</button>
-
         </section>
     </section>
+
     <main>
         <section class="ultimas-noticias">
             <div class="superior-noticias">
@@ -96,19 +95,19 @@
                         <img src="IMG/programa_01.jpg" alt="">
                         <h2>Brasil Urgente</h2>
                         <h3>Seg a Sex º 16h00</h3>
-                        <p>As noticias em tempo real, <br> com credibilidade e agilidade
+                        <p>As noticias em tempo real, <br> com credibilidade e agilidade</p>
                     </div>
                     <div class="programa">
                         <img src="IMG/ultimas-noticias-02.webp" alt="">
                         <h2>MasterChef Brasil</h2>
                         <h3>Ter a Qui º 22h30</h3>
-                        <p>Os melhores cozinheiros do Brasil <br> disputam o grande prêmio
+                        <p>Os melhores cozinheiros do Brasil <br> disputam o grande prêmio</p>
                     </div>
                     <div class="programa">
                         <img src="IMG/ultimas-noticias-03.webp" alt="">
                         <h2>Jornal da Band</h2>
                         <h3>Seg a Sex o 19h20</h3>
-                        <p>O principal telejornal da Band, <br> com as noticias do Brasil e do mundo.
+                        <p>O principal telejornal da Band, <br> com as noticias do Brasil e do mundo.</p>
                     </div>
                     <div class="programa">
                         <img src="IMG/ultimas-noticias-04.webp" alt="">
@@ -145,8 +144,7 @@
                     <li><span class="ponto amarelo"></span> BAND <i class="fa-solid fa-chevron-right"></i></li>
                     <li><span class="ponto azul"></span> BAND SPORTS <i class="fa-solid fa-chevron-right"></i></li>
                     <li><span class="ponto roxo"></span> BAND NEWS <i class="fa-solid fa-chevron-right"></i></li>
-                    <li><span class="ponto verde"></span> BAND INTERNACIONAL <i class="fa-solid fa-chevron-right"></i>
-                    </li>
+                    <li><span class="ponto verde"></span> BAND INTERNACIONAL <i class="fa-solid fa-chevron-right"></i></li>
                 </ul>
             </div>
         </div>
@@ -181,7 +179,7 @@
         </div>
     </footer>
 
-    <!-- ADICIONADO: Estrutura do Modal do Vídeo com Overlay -->
+    <!-- Modal de Vídeo -->
     <div class="video-modal-overlay video-jornal">
         <div class="video-modal-content">
             <button class="X-fechar">&times;</button>
@@ -191,8 +189,55 @@
         </div>
     </div>
 
+    <!-- Modal de Login -->
+    <div class="modal-overlay modal-login">
+        <div class="modal-card">
+            <button class="btn-fechar-modal fechar-login">&times;</button>
+            <h2>Entre na sua conta</h2>
+            <p class="modal-subtitulo">Use seus dados para continuar.</p>
+            <form id="form-login">
+                <div class="campo-grupo">
+                    <label for="login-email">E-mail</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="campo-grupo">
+                    <label for="login-senha">Senha</label>
+                    <input type="password" id="login-senha" required>
+                </div>
+                <button type="submit" class="btn-modal-submit">ENTRAR</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Cadastro -->
+    <div class="modal-overlay modal-cadastro">
+        <div class="modal-card">
+            <button class="btn-fechar-modal fechar-cadastro">&times;</button>
+            <h2>Crie sua conta</h2>
+            <p class="modal-subtitulo">Cadastre-se para acompanhar a programação da Band.</p>
+            <form id="form-cadastro">
+                <div class="campo-grupo">
+                    <label for="cad-nome">Nome</label>
+                    <input type="text" id="cad-nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="campo-grupo">
+                    <label for="cad-email">E-mail</label>
+                    <input type="email" id="cad-email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="campo-grupo">
+                    <label for="cad-senha">Senha</label>
+                    <input type="password" id="cad-senha" placeholder="Crie uma senha" required>
+                </div>
+                <div class="campo-grupo">
+                    <label for="cad-confirma-senha">Confirme sua senha</label>
+                    <input type="password" id="cad-confirma-senha" placeholder="Digite a senha novamente" required>
+                </div>
+                <button type="submit" class="btn-modal-submit">CADASTRAR</button>
+            </form>
+        </div>
+    </div>
+
     <script src="https://kit.fontawesome.com/0d564c5b59.js" crossorigin="anonymous"></script>
-    <!-- ADICIONADO: Importação do arquivo JS -->
     <script src="script.js"></script>
 </body>
 
